@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int Mmenu();
+
+int main ()
+{
+	int menu;
+
+	cout << "Tervetuloa WIP Harkka WIP" << endl;
+
+	cout << "\n 0 Aloita peli";
+	cout << "\n 1 Credits";
+	cout << "\n 2 lopeta peli" << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 0: 
+		break;
+	case 1: cout << "Tekijät Riku Salminen ja Timo Tikkanen " << endl;
+		break;
+	case 2: 
+		break;
+	};
+	system("pause");
+	return 0;
+}
