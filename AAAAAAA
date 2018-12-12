@@ -21,6 +21,9 @@ int main ()
 	case 2: 
 		break;
 	};
+	
+	if (menu == 1) /* aliohjelma kutsu scene 1 */
+	
 	system("pause");
 	return 0;
 }
