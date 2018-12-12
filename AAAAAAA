@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
+int menu;
+int scene_1();
+int scene_2();
 
-int main ()
+int main()
 {
-	int menu;
-
+	
 	cout << "Tervetuloa WIP Harkka WIP" << endl;
 
 	cout << "\n 0 Aloita peli";
@@ -16,16 +18,35 @@ int main ()
 	{
 	case 0: menu = 1;
 		break;
-	case 1: cout << "Tekijät Riku Salminen ja Timo Tikkanen " << endl;
+	case 1: cout << "Tekijat Riku Salminen ja Timo Tikkanen " << endl;
 		break;
-	case 2: 
+	case 2:
 		break;
 	};
-	
-	if (menu == 1) /* aliohjelma kutsu scene 1 */
-	
+
+	if (menu == 1) scene_1();
+	if (menu == 2) scene_2();
+
 	system("pause");
 	return 0;
 }
 
+int scene_1()
+{
+	cout << WIP << endl;
+	cout << WIP << endl;
+	cin >> ws >> menu;
 
+	switch (menu) 
+	{
+	case 0: menu = 2;
+	}
+	return 0;
+}
+
+int scene_2()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
