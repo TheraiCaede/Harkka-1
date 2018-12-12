@@ -6,7 +6,7 @@ int scene_2();
 
 int main()
 {
-	
+
 	cout << "Tervetuloa WIP Harkka WIP" << endl;
 
 	cout << "\n 0 Aloita peli";
@@ -26,6 +26,16 @@ int main()
 
 	if (menu == 1) scene_1();
 	if (menu == 2) scene_2();
+	if (menu == 3) scene_3();
+	if (menu == 4) scene_4();
+	if (menu == 5) scene_5();
+	if (menu == 6) scene_6();
+	if (menu == 7) scene_7();
+	if (menu == 8) scene_8();
+	if (menu == 9) scene_9();
+	if (menu == 10) scene_10();
+	if (menu == 11) scene_11();
+	if (menu == 12) scene_12();
 
 	system("pause");
 	return 0;
@@ -37,7 +47,7 @@ int scene_1()
 	cout << WIP << endl;
 	cin >> ws >> menu;
 
-	switch (menu) 
+	switch (menu)
 	{
 	case 0: menu = 2;
 	}
@@ -45,6 +55,76 @@ int scene_1()
 }
 
 int scene_2()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_3()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_4()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_5()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_6()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_7()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_8()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_9()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_10()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_11()
+{
+	cout << WIP << endl;
+
+	return 0;
+}
+
+int scene_12()
 {
 	cout << WIP << endl;
 
