@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-int Mmenu();
 
 int main ()
 {
@@ -25,4 +24,6 @@ int main ()
 	system("pause");
 	return 0;
 }
+
+
 
