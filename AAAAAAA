@@ -3,39 +3,59 @@ using namespace std;
 int menu;
 int scene_1();
 int scene_2();
+int scene_3();
+int scene_4();
+int scene_5();
+int scene_6();
+int scene_7();
+int scene_8();
+int scene_9();
+int scene_10();
+int scene_11();
+int scene_12();
+
+int scene_18();
+int scene_19();
+
+int scene_21();
 
 int main()
 {
 
 	cout << "Tervetuloa WIP Harkka WIP" << endl;
 
-	cout << "\n 0 Aloita peli";
+	cout << "\n 0 Lopeta peli";
 	cout << "\n 1 Credits";
-	cout << "\n 2 lopeta peli" << endl;
+	cout << "\n 2 Aloita peli" << endl;
 	cin >> ws >> menu;
 
 	switch (menu)
 	{
-	case 0: menu = 1;
+	case 0: exit;
 		break;
 	case 1: cout << "Tekijat Riku Salminen ja Timo Tikkanen " << endl;
 		break;
-	case 2:
+	case 2: menu = 1;
 		break;
 	};
 
-	if (menu == 1) scene_1();
-	if (menu == 2) scene_2();
-	if (menu == 3) scene_3();
-	if (menu == 4) scene_4();
-	if (menu == 5) scene_5();
-	if (menu == 6) scene_6();
-	if (menu == 7) scene_7();
-	if (menu == 8) scene_8();
-	if (menu == 9) scene_9();
-	if (menu == 10) scene_10();
-	if (menu == 11) scene_11();
-	if (menu == 12) scene_12();
+	if (menu == 1) scene_1(); // alku
+	if (menu == 2) scene_2(); // ase
+	if (menu == 3) scene_3(); // exc alku
+	if (menu == 4) scene_4(); // exc 
+	if (menu == 5) scene_5(); // exc
+	if (menu == 6) scene_6(); // exc
+	if (menu == 7) scene_7(); // exc kenraali
+	if (menu == 8) scene_8(); // ava alku
+	if (menu == 9) scene_9(); // ava
+	if (menu == 10) scene_10(); // ava 
+	if (menu == 11) scene_11(); // ava
+	if (menu == 12) scene_12(); // ava kenraali
+	
+	if (menu == 18) scene_18(); // exc loppu
+	if (menu == 19) scene_19(); // ava loppu
+	
+	if (menu == 21) scene_21(); // rip
 
 	system("pause");
 	return 0;
@@ -43,8 +63,12 @@ int main()
 
 int scene_1()
 {
-	cout << WIP << endl;
-	cout << WIP << endl;
+	cout << "This world was ravaged by a war lasting for three decades between the elves, dwarves and the humans."
+		"\nThe war ended with no clear winner and a white peace, the war took a heavy toll though, \nkilling more than a third of the population of the respective factions."
+		"\nNow a new threat looms over the horizon. A great demon king has started his assault on this world"
+		"\nAnd you, a great veteran of this war, must stop his campaing of terror" << endl;
+
+	cout << "0 to continue " << endl;
 	cin >> ws >> menu;
 
 	switch (menu)
@@ -56,77 +80,250 @@ int scene_1()
 
 int scene_2()
 {
-	cout << WIP << endl;
+	cout << "As you learned about you fate to be the hero of this world what did you arm yourself with? " << endl;
 
+	cout << "1 the legendary sword Excalibur from the treasuries of the human king. " << endl;
+	cout << "2 Avalon, the revered elven bow that took down the last great dragon. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 3;
+	case 2: menu = 8;
+	}
 	return 0;
 }
 
-int scene_3()
+int scene_3() // exc alku
 {
-	cout << WIP << endl;
+	cout << "You start your journey with the legendary Excalibur on your hip and a retainer by the name of Rainie with you." 
+			"\nAs you're set upon by bandits just outside of Sachsen, the human capital, Rainie takes out his crossbow and fells one of the bandits. " << endl;
 
+	cout << "1 Stand and fight, if you can't handle a few bandits what hope do you have against a demon king and his armies. " << endl;
+	cout << "2 Dispite them still having three bowmen you decide it's better to run the other way, you couldn't possibly be hit right? " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 4;
+	case 2: menu = 21;
+	}
 	return 0;
 }
 
 int scene_4()
 {
-	cout << WIP << endl;
+	cout << "Suffering little from the fight you feel that Excalibur shielded you during the fight. "
+			"\nAfter a week of travel you arrive at the gate of Marienburg, the fortress nearest to twe kingdoms of the dwarves and the elves. "
+			"\nAnd now the foothold of the demon general Asmodeus, a master of trickery who already incited the eastern marches to open revolt against the king. "
+			"\nGoing through the gate you see a group of demons ready to raid the nearby villages. " << endl;
 
+	cout << "1 Dispose of them before they can harm the weak and the innocent. " << endl;
+	cout << "2 Release the hungry looking hellhounds next to you. " << endl;
+	cout << "3 Attempt to hide before the demons can turn to face you. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 5;
+	case 2: menu = 21;
+	case 3: menu = 21;
+	}
 	return 0;
 }
 
 int scene_5()
 {
-	cout << WIP << endl;
+	cout << "You dispose of the demons quickly and find on their person keys that seem to fit the lock on the kennel next to the gate. "
+			"\nDeciding against opening cages filled with hungry hellhounds you go into the keep. "
+			"\nThe keep is dank and seems to have fallen in disrepair after the war for whatever reason, "
+			"\nbut it would seem that the fountain shrine for Celise is mostly intact. " << endl;
 
+	cout << "1 Drink from the shrine as it still is clearly magical. " << endl;
+	cout << "2 Listed to Rainie and don't drink as the fountain could be poisoned or worse. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 21;
+	case 2: menu = 6;
+	}
 	return 0;
 }
 
 int scene_6()
 {
-	cout << WIP << endl;
+	cout << "Passing the fountain and going further into the keep you dispose of a several guards and patrols "
+			"\nand find yourself in the hallway leading to the hall of the keep lord. "
+			"\nOn both sides of the door you find Asmodeuses body guards. " << endl;
 
+	cout << "1 They can't have seen us, I'll sneak up on them and Rainie will fill them with bolts when I'm near. " << endl;
+	cout << "2 A frontal assault, how tough can they be?" << endl;
+	cout << "3 Lure one of them close and attack picking them off one at a time." << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 21;
+	case 2: menu = 21;
+	case 3: menu = 7;
+	}
 	return 0;
 }
 
-int scene_7()
+int scene_7() // exc kenraali
 {
-	cout << WIP << endl;
+	cout << "Killing the bodyguards was tougher than you thought and the wound on your left thigh stings more than elven poison. "
+			"\nYou keep going knowing that the only way to slow the demon king down is to take out his generals as fast ast possible and you're within striking distance. "
+			"\nOpening the doors you see a lanky and short demon sitting on the lords chair. " << endl;
 
+	cout << "1 Wait for the demon to come to you as Rainie peppers him with bolts. " << endl;
+	cout << "2 Thinking you can outsmart the demon you plan to lure it under the dragon skull suspended in the middle of the hall to crush the demon. " << endl;
+	cout << "3 Feeling you have little time you charge the demon hoping to kill it quickly. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 21;
+	case 2: menu = 21;
+	case 3: menu = 18;
+	}
 	return 0;
 }
 
-int scene_8()
+int scene_8() // ava alku
 {
-	cout << WIP << endl;
+	cout << "Leaving the elven capital of Dagestan with Avalon and a retainer called Clarissa you quickly come across a group of trolls blocking the road ahead. "
+			"\nThey haven't seen you yet but if you leave the treeline that will surely change. "<< endl;
 
+	cout << "1 Trolls are nothing, you step out of the treeline and attack. " << endl;
+	cout << "2 You stay among the trees unleashing Avalons arrows from hiding. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 21;
+	case 2: menu = 9;
+	}
 	return 0;
 }
 
 int scene_9()
 {
-	cout << WIP << endl;
+	cout << "Killing most of the trolls from  a distance worked but two of them came close to finding you, "
+			"\nlucky for you Clarissa springed her trap when they came too close and now the way is open again. "
+			"\nContinuing the path to the elven fort of Roh occupied by Therai, the master of scorched earth warfare, "
+			"\nyou come across three elves fighting with two demons. " << endl;
 
+	cout << "1 See how this turns out. " << endl;
+	cout << "2 Help your countrymen. " << endl;
+	cout << "3 go around to save time. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 21;
+	case 2: menu = 10;
+	case 3: menu = 21;
+	}
 	return 0;
 }
 
 int scene_10()
 {
-	cout << WIP << endl;
+	cout << "It seemed helping was the right decision as more demons came from the woods as soon as you killed the last of the two," 
+			"\nit would've been hopeless to fight all of them with just two. "
+			"\nThe elves tell you about a demonic machine not far from here, able to light the forest on fire. "<< endl;
 
+	cout << "1 Ignore the elves and continue to Roh. " << endl;
+	cout << "2 Take the elves with you and get rid of the machine. " << endl;
+	cout << "3 Go and destroy the machine by yourself. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 1: menu = 21;
+	case 2: menu = 11;
+	case 3: menu = 21;
+	}
 	return 0;
 }
 
 int scene_11()
 {
-	cout << WIP << endl;
+	cout << "Upon seeing the machines you realised how bad of an idea it would've been to come here alone. "
+			"\nYou quickly dispose of the demons guarding the machine and instruct the three elves to take the machine somewhere safe. "
+			"\nWith that detour done you are free to go to Roh to confront Therai. "
+			"\nThe fort rising above the treeline is more of a tower frankly and on it's foot is Therais bodyguard, "
+			"\na massive demon with a flaming axe that seems to be able to fell a tree with one swing. " << endl;
+	cout << "1 Attack from the foliage where it can't see you. " << endl;
+	cout << "2 Have Clarissa jump on it and shoot it's legs from under it. " << endl;
+	cout << "3 Wait for a more opportune moment. " << endl;
+	cin >> ws >> menu;
 
+	switch (menu)
+	{
+	case 1: menu = 21;
+	case 2: menu = 12;
+	case 3: menu = 21;
+	}
 	return 0;
 }
 
-int scene_12()
+int scene_12() // ava kenraali
 {
-	cout << WIP << endl;
+	cout << "As Therais bodyguard lies on the ground you see the tower door swing open and Therai emerge from the door. "
+			"\nThe moment Clarissa sees this she takes the initiative and sticks her daggers into Therai urging you to take the shot. " << endl;
+	cout << "1 Take the shot and end Therais life. " << endl;
+	cout << "2 No. I won't risk a countrymans life for this. " << endl;
+	cin >> ws >> menu;
 
+	switch (menu)
+	{
+	case 1: menu = 19;
+	case 2: menu = 21;
+	}
 	return 0;
 }
+
+int scene_18() // exc loppu
+{
+	cout << "As Excaliburs blade sinks into Asmodeuses body and it's life flowing out you feel your leg give from under you and you fall to the floor. "
+			"\nThe poison in your leg has killed it completely your leg is useless. But at least you're victorious and a general is no more " << endl;
+	cout << "0 to go to menu. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 0: menu = 1;
+	}
+	return 0;
+}
+
+int scene_19() // ava loppu
+{
+	cout << "As you loosen the arrow Clarissa positions her self so that Therai will take the brunt of the attack. "
+			"\nThe arrow goes through both finnishing the demon but sadly killing Clarissa with it. You'll make sure her sacrifice won't be in vain. " << endl;
+	cout << "0 to go to menu. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 0: menu = 1;
+	}
+	return 0;
+}
+
+int scene_21()
+{
+	cout << "You're dead. Laying lifeless on the ground. Soon the demon kings armies will wipe everything. " << endl;
+	cout << "0 to start over. " << endl;
+	cin >> ws >> menu;
+
+	switch (menu)
+	{
+	case 0: menu = 2;
+	}
+	return 0;
+}
+
